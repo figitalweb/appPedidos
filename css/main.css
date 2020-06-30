@@ -7,3 +7,25 @@
 body {
     font-family: 'Nunito', sans-serif;
 }
+
+/*----------  Contenedor Principal  ----------*/
+.container {
+    display: grid;
+}
+
+/*----------  seccion del header  ----------*/
+.head {
+    background-color: rgb(225, 255, 237);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 1px 2px 3px rgba(128, 128, 128, 0.472);
+}
+
+.head h1 {
+    display: inline-block;
+    border-top: 4px solid blue;
+    border-bottom: 4px solid blue;
+    color: rgb(5, 82, 226);
+    text-align: center;
+}
