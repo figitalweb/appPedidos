@@ -1,5 +1,5 @@
 :root {
-    --head-bg-color: #fff8d5;
+    --color-bg: #fff8d5;
     --color-primary: #F29F05;
     --color-secondary: #D97B29;
     --color-info: #F2955E;
@@ -33,7 +33,7 @@ a {
 
 /*----------  seccion del header  ----------*/
 .head {
-    background-color: var(--head-bg-color);
+    background-color: var(--color-bg);
     padding: 15px;
     display: flex;
     justify-content: center;
@@ -136,6 +136,11 @@ a {
 /*----------  Seccion Pie de pagina  ----------*/
 .copy {
     grid-area: footer;
+    min-height: 100px;
+    background-color: var(--color-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
