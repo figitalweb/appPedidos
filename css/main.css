@@ -1,3 +1,4 @@
+/* Declaracion de variables */
 :root {
     --color-bg: #fff8d5;
     --color-primary: #F29F05;
@@ -5,6 +6,7 @@
     --color-info: #F2955E;
 }
 
+/* Ajustes generales */
 *,*::before,*::after {
     box-sizing: border-box;
     margin: 0;
