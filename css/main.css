@@ -53,7 +53,10 @@ a {
 /*----------  seccion de productos  ----------*/
 .containerProducts {
     grid-area: products;
-    padding: 20px 20px;
+    padding: 40px 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .containerProducts article {
@@ -62,6 +65,12 @@ a {
     box-shadow: 0 0 3px  rgba(128, 128, 128, 0.472);
     text-align: center;
     position: relative;
+    margin-bottom: 40px;
+    margin-right: 50px;
+}
+
+.containerProducts article:nth-child(even){
+    margin-right: 0;
 }
 
 .containerProducts article img {
@@ -130,3 +139,9 @@ a {
 }
 
 
+/*----------  Media Query  ----------*/
+@media (max-width: 768px){
+    .containerProducts article {
+        margin-right: 0;
+    }
+}
