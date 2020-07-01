@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+img {
+    vertical-align: top;
+}
+
 body {
     font-family: 'Nunito', sans-serif;
 }
@@ -11,6 +15,9 @@ body {
 /*----------  Contenedor Principal  ----------*/
 .container {
     display: grid;
+    grid-template-areas: "header"
+                         "products"
+                         "footer";
 }
 
 /*----------  seccion del header  ----------*/
@@ -20,6 +27,7 @@ body {
     display: flex;
     justify-content: center;
     box-shadow: 0 1px 2px 3px rgba(128, 128, 128, 0.472);
+    grid-area: header;
 }
 
 .head h1 {
@@ -28,4 +36,18 @@ body {
     border-bottom: 4px solid blue;
     color: rgb(5, 82, 226);
     text-align: center;
+    font-weight: 900;
 }
+
+/*----------  seccion de productos  ----------*/
+.containerProducts {
+    grid-area: products;
+}
+
+
+/*----------  Seccion Pie de pagina  ----------*/
+.copy {
+    grid-area: footer;
+}
+
+
